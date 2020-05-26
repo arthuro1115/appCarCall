@@ -185,7 +185,8 @@ public class MainActivity extends AppCompatActivity {
 
                             if (dadosFinais.contains("codloc")) {
 
-                                if (ActivityCompat.checkSelfPermission(MainActivity.this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED){
+                                if (ActivityCompat.checkSelfPermission(MainActivity.this, Manifest.permission.ACCESS_FINE_LOCATION)
+                                    == PackageManager.PERMISSION_GRANTED){
                                     //Se a for permitido
                                     getLocation();
 
@@ -200,7 +201,8 @@ public class MainActivity extends AppCompatActivity {
 
                                 }else{
                                     //Se não for permitido
-                                    ActivityCompat.requestPermissions(MainActivity.this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION},44);
+                                    ActivityCompat.requestPermissions(MainActivity.this,
+                                                                      new String[]{Manifest.permission.ACCESS_FINE_LOCATION},44);
                                 }
 
                             } else {
