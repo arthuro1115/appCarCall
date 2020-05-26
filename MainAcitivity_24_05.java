@@ -288,7 +288,8 @@ public class MainActivity extends AppCompatActivity {
     protected void sendTextSMS() {
 
         SmsManager smsManager = SmsManager.getDefault();
-        smsManager.sendTextMessage("19988430607",null,"" + countSend + ".Solicitando Ajuda no LOCAL, Latitude:" + strSendLatitude + "" + "Longitude:" + strSendLongitude,null,null );
+        smsManager.sendTextMessage("19988430607",null,"" + countSend + ".Solicitando Ajuda no LOCAL, Latitude:" + strSendLatitude +
+        "" + "Longitude:" + strSendLongitude,null,null );
         Toast.makeText(this, "Enviando Sua Localização",Toast.LENGTH_LONG).show();
 
         //Mudar mensagem
